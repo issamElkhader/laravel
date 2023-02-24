@@ -1,0 +1,10 @@
+<html>
+    <head>
+        @yield("meta")
+    </head>
+    <body>
+        @include("header")
+        @yield("content")
+        @include("footer")
+    </body>
+</html>
