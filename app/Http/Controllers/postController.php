@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post ;
+use App\Models\Comment ;
 
 class postController extends Controller
 {
@@ -12,13 +13,13 @@ class postController extends Controller
         return ("default page");
     } 
     
-    public function index() 
+    public function postsList() 
     {
-        $posts=Post::on('mysql')->get();
-        return view("posts.index" , compact("posts"));
+        $posts=Post::get();
+        return view("posts.postsList" , compact("posts"));
     }
-    public function show(Post $post) 
+    public function post(Post $post) 
     {
-        return view("posts.show" , compact("posts"));
+        return view("posts.post" , compact("post"));
     }
 }
