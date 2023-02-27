@@ -1,12 +1,12 @@
 @extends('master')
 @section('meta')
-    <title>Liste des posts</title>
+    <title>post details</title>
 @endsection
 @section('content')
     @if ($post)
         <div class="w-full min-h-screen sm:min-h-screen lg:min-h-[100vh] p-2 text-slate-200">
             <div class="w-full flex flex-col gap-3">
-                <h1 class="text-emerald-400 text-xl sm:text-xl lg:text-2xl pl-3 sm:pl-3 sl:pl-5 font-poppins font-bold mb-5">
+                <h1 class="text-emerald-400 text-xl sm:text-xl lg:text-2xl pl-3 sm:pl-3 sl:pl-5 font-poppins font-bold mb-5 ">
                     Post Details</h1>
                 <div class="pl-4 w-full flex flex-col justify-center items-center">
                     <div class="w-[96%] flex flex-col gap-3">
